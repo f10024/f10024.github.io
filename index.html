@@ -9,17 +9,53 @@
     <title>f10024 | Software Engineer & Indie Hacker</title>
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --text: #f1f5f9; --primary: #38bdf8; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 40px 20px; }
-        .container { max-width: 800px; margin: 0 auto; }
+        
+        html, body { height: 100%; margin: 0; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.6; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px;
+            flex: 1; 
+        }
+        
         header { margin-bottom: 60px; border-bottom: 1px solid #334155; padding-bottom: 20px; }
         h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--primary); }
+        
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .card { background: var(--card); padding: 20px; border-radius: 12px; transition: transform 0.2s; text-decoration: none; color: inherit; border: 1px solid transparent; }
+        .card { 
+            background: var(--card); 
+            padding: 20px; 
+            border-radius: 12px; 
+            transition: transform 0.2s; 
+            text-decoration: none; 
+            color: inherit; 
+            border: 1px solid transparent; 
+        }
         .card:hover { transform: translateY(-5px); border-color: var(--primary); }
         .card h3 { margin-top: 0; color: var(--primary); }
-        .links { margin-top: 15px; font-size: 0.9rem; }
-        .links a { color: #94a3b8; text-decoration: underline; margin-right: 10px; }
-        footer { margin-top: 80px; text-align: center; color: #64748b; font-size: 0.8rem; }
+        
+        .links { margin-top: 15px; font-size: 0.85rem; }
+        .links a { color: #94a3b8; text-decoration: underline; margin-right: 12px; display: inline-block; margin-bottom: 5px; }
+        .links a.store-link { color: var(--primary); font-weight: bold; }
+        
+        footer { 
+            padding: 40px 20px; 
+            text-align: center; 
+            color: #64748b; 
+            font-size: 0.8rem; 
+            border-top: 1px solid #334155;
+            background: #0f172a;
+        }
+        
         @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -38,17 +74,9 @@
                     <h3>🎙️ VoiceMemo</h3>
                     <p>AI 음성 메모 및 스마트 요약 서비스</p>
                     <div class="links">
+                        <a href="https://play.google.com/store/apps/details?id=com.voicememoapp" target="_blank" class="store-link">Google Play Store</a><br>
                         <a href="./app-support/voice-memo/index.html">공식 홈페이지</a>
                         <a href="./app-support/voice-memo/privacy.html">개인정보처리방침</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>📄 PDF-Hub</h3>
-                    <p>웹에서 바로 하는 PDF 병합/분할 도구</p>
-                    <div class="links">
-                        <a href="https://pdf-hub.app">서비스 바로가기</a>
-                        <a href="./app-support/pdf-hub/privacy.html">개인정보처리방침</a>
                     </div>
                 </div>
 
@@ -56,16 +84,26 @@
                     <h3>📝 Notely</h3>
                     <p>AI 메모 요약 및 스마트 노트 정리 앱</p>
                     <div class="links">
+                        <a href="https://play.google.com/store/apps/details?id=com.notelyapp" target="_blank" class="store-link">Google Play Store</a><br>
                         <a href="./app-support/notely/privacy.html">개인정보처리방침</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>📄 PDF-Hub</h3>
+                    <p>웹에서 바로 하는 PDF 병합/분할 도구</p>
+                    <div class="links">
+                        <a href="https://pdf-hub.app" target="_blank">서비스 바로가기</a>
+                        <a href="./app-support/pdf-hub/privacy.html">개인정보처리방침</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <footer>
-            <p>&copy; 2026 f10024. All rights reserved.</p>
-            <p>Contact: hwangjungseok@gmail.com</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>&copy; 2026 f10024. All rights reserved.</p>
+        <p>Contact: hwangjungseok@gmail.com</p>
+    </footer>
 </body>
 </html>
